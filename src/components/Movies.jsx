@@ -8,7 +8,7 @@ const Movies = () => {
   
   if (!loading) {
     return (
-      <div className="flex justify-center items-center h-1/2">
+      <div className="flex justify-center items-start h-screen">
         <div className="text-white text-2xl">Loading...</div>
       </div>
     )
