@@ -23,8 +23,10 @@ export const MovieProvider = ({children}) =>{
     searchMovie()
   },[])
 
+
+
     return(
-      <Movie.Provider value={{search,setSearch,movie,setMovie,searchMovie,loading}}>
+      <Movie.Provider value={{search,setSearch,movie,setMovie,searchMovie,loading,setLoading}}>
         {children}
       </Movie.Provider>
     )

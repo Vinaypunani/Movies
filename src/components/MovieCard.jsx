@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useContext, useEffect} from 'react'
 
 const MovieCard = ({title,poster,year,type,imdbID}) => {
+
   return (
     <div className="max-w-sm rounded-xl overflow-hidden shadow-lg bg-gray-800 m-4">
       <img 

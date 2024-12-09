@@ -3,10 +3,11 @@ import { Movie } from '../Context/MovieContext'
 
 const Search = () => {
 
-  const {search,setSearch,searchMovie} = useContext(Movie) 
+  const {search,setSearch,searchMovie,setLoading} = useContext(Movie) 
   const onSubmit = (e) =>{
     e.preventDefault()
     searchMovie()
+    setLoading(false)
   }
 
   return (

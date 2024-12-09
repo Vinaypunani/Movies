@@ -4,7 +4,7 @@ import { Movie } from '../Context/MovieContext'
 
 const Movies = () => {
 
-  const {movie,setMovie,loading} = useContext(Movie)
+  const {movie,setMovie,loading,} = useContext(Movie)
   
   if (!loading) {
     return (
